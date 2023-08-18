@@ -1,0 +1,29 @@
+# Generic backup files
+*~
+\#*
+.\#*
+
+# KiCad backup files
+*.bak
+*.bck
+*.kicad_pcb-bak
+
+# KiCad generated files
+*.erc
+*.net
+*-cache.lib
+*-rescue.lib
+fp-info-cache
+
+# OS X
+.DS_Store
+
+# KiCad project backup directories
+EL-Load-Simple-Power/EL-Load-Simple-Power-backups
+EL-Load-Digital/EL-Load-Digital-backups
+
+#FreeCad backup files
+*.FCStd1
+
+# Not included because of copyrights
+Datasheets/

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/Libraries/MCU_RaspberryPi_and_Boards.kicad_sym")(options "")(descr ""))
+  (lib (name "EL-Load-Digital-parts")(type "KiCad")(uri "${KIPRJMOD}/Libraries/EL-Load-Digital-parts.kicad_sym")(options "")(descr ""))
+)
