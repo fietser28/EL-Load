@@ -21,6 +21,8 @@ fp-info-cache
 # KiCad project backup directories
 EL-Load-Simple-Power/EL-Load-Simple-Power-backups
 EL-Load-Digital/EL-Load-Digital-backups
+EL-Load-Analog/EL-Load-Analog-backups
+EL-Load-Fan-Controller/EL-Load-Fan-Controller-backups
 
 #FreeCad backup files
 *.FCStd1

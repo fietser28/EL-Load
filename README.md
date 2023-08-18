@@ -37,7 +37,7 @@ With software support:
 ### Limitations / Issues
 
 * The ADC and DAC are on a seperate PCB's. This causes some offset errors. Especially in the Imon/Umon. This might also be caused by the next issue
-* The current implementations use TL431 for voltage reference. This is not good enough. 
+* Fixed (not tested): The current implementations use TL431 for voltage reference. This is not good enough. 
 * Von causes some oscillation when the voltage slowly decreases to the set level. This is noticable in a typical battery discharge test. As this ia a very valid and common
 * The power supply board is a very simplistic set of 78** / 79**. Ok for testing, but needs to be replaced with something decend
 * Reverse polarity is a very crude diode: Implement a proper reverse polarity circuit preferabbly with a detection to software (nice to have)
@@ -57,7 +57,7 @@ Hardware changed needed to become a proper DIB module/BB3 module:
 
 ### TODO
 
-* Replace TL431 reference with an REF5025
+* Done: Replace TL431 reference with an REF5025
 * Move the ADC and DACs to the Analog board. The connection to digital will be SPI & I2C only
 * Replace the -2.5 volt power for a proper LDO. Currently a TL431 with a resistor is used.
 * Test the ADC clamp circuits, they are on the PCB but I didn't test it yet.
