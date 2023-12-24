@@ -2,17 +2,23 @@
 *~
 \#*
 .\#*
+*.temp
 
-# KiCad backup files
+# KiCad temporary & backup files
+*.000
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.sch-bak
 
 # KiCad generated files
 *.erc
 *.net
 *-cache.lib
 *-rescue.lib
+*-backups
 fp-info-cache
 
 # OS X
@@ -27,5 +33,11 @@ EL-Load-Fan-Controller/EL-Load-Fan-Controller-backups
 #FreeCad backup files
 *.FCStd1
 
+#FreeCad FEM data
+*.FCBak
+
 # Not included because of copyrights
 Datasheets/
+
+# For PCB fabrication generated upload files (Fabrication Toolkit add-on)
+production/
