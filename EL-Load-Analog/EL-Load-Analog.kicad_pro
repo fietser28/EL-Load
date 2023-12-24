@@ -56,7 +56,43 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "missing_courtyard|105300000|45000000|9547125c-08ee-4c6c-91e7-93827ea2b8e9|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|100180000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|330f48ca-53ce-4fab-9cd7-86fa33db9c87",
+        "silk_edge_clearance|101960000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|60aaecfa-226e-4fd9-b1e6-6941d1ec5fd6",
+        "silk_edge_clearance|102720000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|db05e0f1-be40-46ad-8b79-0fd2bf180968",
+        "silk_edge_clearance|104500000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|fff27054-a6df-4da0-97ab-7f8cbfd54e9d",
+        "silk_edge_clearance|105260000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|138a11f6-c5c5-4be8-b45c-21720cb7bf4d",
+        "silk_edge_clearance|107040000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|ead0b497-4736-46aa-9cc0-83f482241f2a",
+        "silk_edge_clearance|107800000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|8f7ee5ff-41f7-41a3-8e3f-c90560add20e",
+        "silk_edge_clearance|109580000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|2d0974e2-990f-4ffb-8a14-9c08eb00721a",
+        "silk_edge_clearance|110340000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|685346d5-a3df-40df-8c9c-83b32bdbeac9",
+        "silk_edge_clearance|112120000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|8ff69269-94e7-4e43-8c5c-8b02831044be",
+        "silk_edge_clearance|112880000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|69e428a8-ee30-4d4c-98f9-e4e1f0027d8e",
+        "silk_edge_clearance|79100000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|39275ffd-9e90-44a2-a559-d02fbad9528f",
+        "silk_edge_clearance|79160000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|0235530d-665f-497b-9cd1-864aa467e59d",
+        "silk_edge_clearance|79280000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|b07c25e0-5822-49a0-bb29-133470bcc86c",
+        "silk_edge_clearance|79400000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|d3f25b1e-1430-47bd-af8b-b2105978ca52",
+        "silk_edge_clearance|79520000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|21c1453f-1ca1-4f1c-9a9b-9e6bc4ea48a8",
+        "silk_edge_clearance|79640000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|2d8950a8-4e8e-4b46-984d-30be439b212f",
+        "silk_edge_clearance|79760000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|d216508c-f196-4c2f-b7e7-25b89b2fc7b1",
+        "silk_edge_clearance|79860000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|2f08f135-6f88-419a-bc54-faaded5f9eaf",
+        "silk_edge_clearance|81640000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|ab0b467e-46d9-4ac2-8d3a-9047450868c1",
+        "silk_edge_clearance|82400000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|74ca0ce0-b698-445a-b003-113aeaa6e108",
+        "silk_edge_clearance|84180000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|33436cd6-0438-4c18-a44f-4c075f99720b",
+        "silk_edge_clearance|84940000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|3995d0cb-92f9-47ef-b2af-9507f030e4a6",
+        "silk_edge_clearance|86720000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|ac999e3f-c4a9-4090-a238-68490c3bdc89",
+        "silk_edge_clearance|87480000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|0a397ce8-9439-4a5d-bfd0-00f53366bb5d",
+        "silk_edge_clearance|89260000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|087c5e8a-dd74-4b32-a319-7bbc5a97d314",
+        "silk_edge_clearance|90020000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|59586dcc-5ac0-46d9-869d-3e5878a306d7",
+        "silk_edge_clearance|91800000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|60ea79dd-212f-40be-999a-c1b1cecc4ff1",
+        "silk_edge_clearance|92560000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|737f1cd4-1e7c-4c80-9cdc-9e1275716a57",
+        "silk_edge_clearance|94340000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|ca5fcbee-cac3-42a8-8d17-5034d0676ec4",
+        "silk_edge_clearance|95100000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|d7bea882-2ffb-476c-917f-c93d91a4d4e9",
+        "silk_edge_clearance|96880000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|724d5370-12d6-4240-b65d-c1dd5b442212",
+        "silk_edge_clearance|97640000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|c7f56f20-6c88-42a2-9db5-263ee16cf308",
+        "silk_edge_clearance|99420000|115000000|8a6cc64e-f46b-47bf-99d0-ece1078d71b3|3fe220ae-f3e9-47f9-8bd6-c7ccf7ba1066"
+      ],
       "meta": {
         "version": 2
       },
@@ -116,9 +152,9 @@
         "max_error": 0.005,
         "min_clearance": 0.125,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.3,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
@@ -127,7 +163,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
-        "min_via_annular_width": 0.049999999999999996,
+        "min_via_annular_width": 0.19999999999999998,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
@@ -183,6 +219,8 @@
         3.0,
         4.0,
         5.0,
+        7.0,
+        8.0,
         10.0
       ],
       "via_dimensions": [
@@ -441,7 +479,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 1.0,
+        "clearance": 2.0,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -458,7 +496,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 1.0,
+        "clearance": 2.0,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -572,7 +610,19 @@
     ],
     [
       "73a2922e-6b99-4e2c-8c0a-1f11161a60e3",
-      "Shifts & References"
+      "Power & References"
+    ],
+    [
+      "11723597-8dfc-4b1a-a2ae-7a0fb5ce6508",
+      "DIB connection"
+    ],
+    [
+      "1e2dd555-22d3-450d-a06d-3bac2b9e85f5",
+      "MCU connection"
+    ],
+    [
+      "f2c211c4-d9f0-4247-aac8-dfc9339194ed",
+      "DAC & ADC"
     ]
   ],
   "text_variables": {

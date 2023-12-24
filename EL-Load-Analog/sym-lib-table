@@ -1,4 +1,6 @@
 (sym_lib_table
   (version 7)
   (lib (name "EL-Load")(type "KiCad")(uri "${KIPRJMOD}/EL-Load-Analog.kicad_sym")(options "")(descr ""))
+  (lib (name "EEZ-DIB")(type "KiCad")(uri "${KIPRJMOD}/libraries/EEZ-DIB.kicad_sym")(options "")(descr ""))
+  (lib (name "EL-Load-Digital-parts")(type "KiCad")(uri "${KIPRJMOD}/libraries/EL-Load-Digital-parts.kicad_sym")(options "")(descr ""))
 )
