@@ -104,7 +104,7 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
+        "lib_footprint_issues": "ignore",
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
@@ -225,7 +225,23 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "multiple_net_names|1454150|342900|c84c1130-38b1-4332-9112-c9ce8253c72d|cd9900bb-bdde-4940-9aa9-f8b2fb8a0dff|||",
+      "multiple_net_names|1530350|1460500|b5d6adaf-3eba-4aeb-98ec-fd14f9a31a68|fab51997-9d99-4f52-9d57-fcdfb73b1602|||",
+      "multiple_net_names|1530350|1504950|66e041fa-ebed-46ea-9ede-f71f79c0acef|adbf6285-9d64-4f19-b900-8c01843e58ae|||",
+      "multiple_net_names|1530350|1536700|1ff3fc19-0b0a-49ad-93b9-5105a7008c6d|b19ba11d-b986-4e4a-adac-7ad3032a942e|||",
+      "multiple_net_names|1530350|1568450|471f096b-39c8-4901-b13f-77ce767f26db|2d0f376e-363b-49ec-96ac-4a41e50266f7|||",
+      "multiple_net_names|1530350|1600200|a7584ba0-959b-4cb3-927a-2244d7fa5ab5|a196db3b-0c1d-480a-a8b6-53d88f5a187a|||",
+      "multiple_net_names|1530350|1631950|8d16262d-d41b-4436-a822-72848d3f19e0|b4505d1f-7795-4087-8b40-bfd77bcdabb3|||",
+      "multiple_net_names|1530350|1663700|7591fa21-4ee2-4bd6-9187-8783a11b279b|02c2f57f-13f2-4778-abef-f120151d1442|||",
+      "multiple_net_names|1530350|1695450|4f1062ac-afd7-4302-a6af-149dc9d27f01|390caf9a-9380-40ba-aa71-91439fc2be42|||",
+      "multiple_net_names|1530350|1797050|a03ac3b3-c115-496e-b95a-da9e75df15bb|b5ccf403-3563-41f0-b629-a02cffce2a58|||",
+      "multiple_net_names|1530350|1828800|8671cd2b-3eed-4dc9-a389-34ac31b067be|beffb7e5-d0f2-4c0d-a4bf-da3c25e0a527|||",
+      "multiple_net_names|1530350|1892300|8beb34b4-42e8-4a4f-80bb-21a23721ed95|3c5f85b6-966b-48aa-ae09-88b40f9973d7|||",
+      "multiple_net_names|1531620|1859280|a83e5805-3b34-454c-bf45-6b3e0c7443cf|683fa659-35dc-4fc1-808b-3ac2f06e0f82|||",
+      "multiple_net_names|1536700|1727200|7be21706-e2e2-4297-ae31-2c05a08dbe33|8d93268a-ecb5-4b3a-8aee-73678ee18e63|||",
+      "multiple_net_names|2489200|1638300|3b40cc7a-38b3-480d-ab52-0bd94f2bd648|5fd7ed50-be7e-41a9-b71a-67eb56ef5013|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -575,6 +591,6 @@
   ],
   "text_variables": {
     "PCBVERSION": "A",
-    "VERSION": "1"
+    "VERSION": "2"
   }
 }
