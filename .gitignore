@@ -12,6 +12,7 @@
 *.kicad_sch-bak
 *.kicad_prl
 *.sch-bak
+_autosave-*
 
 # KiCad generated files
 *.erc
