@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "EL-Load-Power")(type "KiCad")(uri "${KIPRJMOD}/libraries/EL-Load-Power.kicad_sym")(options "")(descr ""))
+  (lib (name "Isolators")(type "KiCad")(uri "${KIPRJMOD}/libraries/Isolators.kicad_sym")(options "")(descr ""))
+  (lib (name "Pico")(type "KiCad")(uri "${KIPRJMOD}/libraries/SC0915/SC0915.kicad_sym")(options "")(descr ""))
+  (lib (name "EL-Load")(type "KiCad")(uri "${KIPRJMOD}/libraries/EL-Load-Analog.kicad_sym")(options "")(descr ""))
+)

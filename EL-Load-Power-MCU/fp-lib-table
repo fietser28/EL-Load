@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "EL-Load-Power")(type "KiCad")(uri "${KIPRJMOD}/libraries/EL-Load-Power")(options "")(descr ""))
+  (lib (name "Pico")(type "KiCad")(uri "${KIPRJMOD}/libraries/SC0915")(options "")(descr ""))
+)
