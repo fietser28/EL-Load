@@ -70,12 +70,19 @@ Hardware changed needed to become a proper DIB module/BB3 module:
 ### EL-Load-Analog
 Main PCB. Contains all the analog circuitry including MOSFETS. The DAC & ADC's are also on this board. Sizes of the PCB adhere to DIB standard (I hope).
 
+![EL-Load-Analog](EL-Load-Analog/EL-Load-Analog.png)
+
 ### EL-Load-Power-MCU
 PCB for stand alone deployment outside of BB3. This board contains an isolated power supply (input 5V) with fan controllers, MCU, GPIO and a bunch of connectors. 
 It directly fits to the Analog PCB with an addidional IDC cable. There is also an IDC connector to the Front panel PCB.
 
+![EL-Load-Power-MCU](EL-Load-Power-MCU/EL-Load-Power-MCU.png)
+
 ### EL-Load-Panel
 Front panel PCB for standalone deployment. Connects to EL-Load-Power-MCU. Has a connector for common 2.4/2.8" TFT touchscreen PCBs, 1 encoder, 1 microswitch and one 1 LED.
+
+![EL-Load-Panel](EL-Load-Panel/EL-Load-Panel.png)
+![EL-Load-Panel backside](EL-Load-Panel/EL-Load-Panel2.png)
 
 ## Obsolete PCB's
 
