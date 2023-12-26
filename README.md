@@ -4,11 +4,13 @@ SPDX-FileCopyrightText: 2023 Jan Nieuwstad <jan.sources@nieuwstad.net>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
+# This is WORK IN PROGRESS.
+The designs here are not finished or fully tested yet.
 
 # Overview
 
 The DCL8010 electronic load module features a DC Electronic Load with several modes and protections.
-This project is the for the development boards for this project.
+This project is the for the development boards for this project. There is a seperate git project for the firmware.
 
 ## Specifications
 
@@ -20,28 +22,28 @@ This project is the for the development boards for this project.
 
 * Protections:
 In hardware:
-  * User definable Over Voltage Protection, clamps load off 
-  * User definable Over Current Protection, clamps load off
+  * User definable Over Voltage Protection, clamps load off within 1ms
+  * User definable Over Current Protection, clamps load off within 1ms
 With software support:
-  * User definable Over Power Protection
-  * User definable Over Temperature Protection
+  * User definable Over Power Protection for a specific time in seconds (1-99)
+  * User definable Over Temperature Protection for a specific time in seconds (1-99)
 
 * Other hardware features:
- * Von: The minimum voltage needs to be present before the load is turned on. This can be set with or without latching. This is implemented in hardware and when on guarentees a gradual turn-on if a source is 'hot plugged' or turned on. 
- * Temperature based fan control
- * Fan RPM readout
- * Heatsing temperature readout
+  * Von: The minimum voltage needs to be present before the load is turned on. This can be set with or without latching. This is implemented in hardware and when on guarentees a gradual turn-on if a source is 'hot plugged' or turned on. 
+  * Temperature based fan control
+  * Fan RPM readout
+  * Heatsink temperature readout
 
 ## Limitations / Issues
 
-* The ADC and DAC are on a seperate PCB's. This causes some offset errors. Especially in the Imon/Umon. This might also be caused by the next issue
+* Fixed (not tested): The ADC and DAC are on a seperate PCB's. This causes some offset errors. Especially in the Imon/Umon. This might also be caused by the next issue
 * Fixed (not tested): The current implementations use TL431 for voltage reference. This is not good enough. 
 * Von causes some oscillation when the voltage slowly decreases to the set level. This is noticable in a typical battery discharge test. As this ia a very valid and common
-* The power supply board is a very simplistic set of 78** / 79**. Ok for testing, but needs to be replaced with something decend
+* Changed (not tested): The power supply board is a very simplistic set of 78** / 79**. Ok for testing, but needs to be replaced with something decend
 * Reverse polarity is a very crude diode: Implement a proper reverse polarity circuit preferabbly with a detection to software (nice to have)
-* Add a fuseholder
-* Test with real LM3/150 heatsink using screwmounting and isolation.
-
+* Fixed (not tested the heating...): Add a fuseholder
+* Test with real LM3/150 heatsink using screwmounting and isolation. If someone can get me one.....
+* Optimal placment of MOSFETS on real heatsink is not determined. 
 
 Hardware changed needed to become a proper DIB module/BB3 module:
 
