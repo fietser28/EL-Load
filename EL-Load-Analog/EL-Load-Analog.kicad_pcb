@@ -10,7 +10,6 @@
     (date "2023-07-08")
     (rev "${VERSION}-${PCBVERSION}")
     (comment 1 "License: CERN-OHL-W-2.0")
-    (comment 4 "AISLER Project ID: HGBHUHUC")
   )
 
   (layers
