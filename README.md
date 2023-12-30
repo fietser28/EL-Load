@@ -22,17 +22,61 @@ This project is the for the development boards for this project. There is a sepe
 
 * Protections:
 In hardware:
-  * User definable Over Voltage Protection, clamps load off within 1ms
-  * User definable Over Current Protection, clamps load off within 1ms
+  * User definable Over Voltage Protection (OVP), clamps load off within 1ms
+  * User definable Over Current Protection (OCP), clamps load off within 1ms
 With software support:
   * User definable Over Power Protection for a specific time in seconds (1-99)
   * User definable Over Temperature Protection for a specific time in seconds (1-99)
 
 * Other hardware features:
-  * Von: The minimum voltage needs to be present before the load is turned on. This can be set with or without latching. This is implemented in hardware and when on guarentees a gradual turn-on if a source is 'hot plugged' or turned on. 
+  * Von: The minimum voltage needs to be present before the load is turned on. This can be set with or without latching. This is implemented in hardware and when on guarentees a gradual turn-on if a power source is 'hot plugged' or turned on. 
   * Temperature based fan control
   * Fan RPM readout
   * Heatsink temperature readout
+
+## Design considerations
+
+### Sizing
+The Electronic Load was designed to complement a pair of BB3 DCP405 modules. Such a pair can deliver up to 80V (series configuration) or 10A (parallel configuration). The power is just maximized what is achievable with the small form factor of a BB3 module.
+
+Minimum set voltage (an von cutoff) aim is as low as possible but at least 0.5V. A low Von cutoff is important to discharge for example AA battries (around 0.8V).
+
+### Resolution and accurary
+Aim is to have 0.1% full scale accurary after calibration. Calibration will be done in 100% in software.
+
+This results in the follwing goals:
+| Input/output | Range      | Accuracy  | Resolution | Remarks 
+| ---          |  ---       | ---       | ---        | ---
+| Current monitor | 0-10A   | 10mA      | 1mA        | 
+| Current monitor | 0-1A    | 1mA       | 0.1mA      | not implemented yet
+| Voltage monitor | 0-80V   | 80mV      | 1mV        |
+| Voltage monitor | 0-9V    | 5mV       | 1mV        |
+| Power measurements | 0-24h | 1s & 0.2% FS | 1s     | Perform accurate incremental calculations and timing
+| Current set     | 0-10A   | 10mA      | 1mA        |
+| Current set     | 0-1A    | 1mA       | 1mA        | not implemented yet
+| Voltage set     | 0.5-80V | 80mV      | 1mV        |
+| Voltage set     | 0.5-9V  | 5mV       | 1mV        |
+| Resistance set  | ?       | ?         | ?          | 0.5% FS In software
+| Power set       | ?       | ?         | ?          | 0.5% FS in software
+| Von set (80V range) | 0.25-50V | 0.2V  | 0.1V       | Difficult to calibrate
+| Von set (9V range) | 0.25-6V | 0.1V  | 0.1V       | Difficult to calibrate
+| OCP (10A range) | 0.1-10A | 100mA  | 10mA       | Difficult to calibrate
+| OCP set (1A range) | 0.25-6V | 10mA  | 1mA       | Difficult to calibrate, not implemnted yet
+| OVP (80V range) | 1-80V | 0.2V  | 0.1V       | Difficult to calibrate
+| OVP set (9V range) | 0.25-9V | 0.1V  | 0.1V       | Difficult to calibrate, not tested yet
+
+Using 16bit ADC's and DAC's this should be achievable with calibration done in software.
+
+### Hardware / software partitioning
+Everything requiring a response below 10ms is implemented directly in hardware. All other functionality is preferably done in software.
+This results in the following decisions:
+* Current and Voltage measurement and control loops are in analog circuitry
+* Over voltage and over current protection measurement and shutdown are in hardware with a seperate clamp on the power MOSFET gates to shutdown as fast as possible. It is up to software to toggle pins to release the hwardware protection
+* Von circuitry is implemented in hardware including the latch. The Von circuitry is important to avoid the MOSFET loops to go fully open (unregulated) when the supplied current and/or voltage is less then the set values. An unregulated situation would lead to large (= overshoot) spikes if the DUT suddenly starts providing more power (e.g. plug-in/turn on).
+* To combine current, voltage and Von control a cross-over circuit is used where the smallest set current will get priority.
+
+### Fail safely: 
+An electronic load is often used to discharge batteries and due to the time this takes it is not realistic to assume the discharge is always attended by a person. If a failing component in the electronic load fails it might cause a short. A battery (or other power source without proection) being shorted is a serious fire hazard. Therefore the Electronic Load has a physical fuse and all possbile components that might faile are behind this fuse. This includes the input snubber network, transient and revserse polarity diode and of course the main MOSFETS of the electronic load. This protection is not perfect: It requires a >10A peak surge, but greatly reduces the risk.
 
 ## Limitations / Issues
 
@@ -40,7 +84,7 @@ With software support:
 * Fixed (not tested): The current implementations use TL431 for voltage reference. This is not good enough. 
 * Von causes some oscillation when the voltage slowly decreases to the set level. This is noticable in a typical battery discharge test. As this ia a very valid and common
 * Changed (not tested): The power supply board is a very simplistic set of 78** / 79**. Ok for testing, but needs to be replaced with something decend
-* Reverse polarity is a very crude diode: Implement a proper reverse polarity circuit preferabbly with a detection to software (nice to have)
+* Reverse polarity is a very crude diode+fuse: Implement a proper reverse polarity circuit preferabbly with a detection to software (nice to have)
 * Fixed (not tested the heating...): Add a fuseholder
 * Test with real LM3/150 heatsink using screwmounting and isolation. If someone can get me one.....
 * Optimal placment of MOSFETS on real heatsink is not determined. 
@@ -60,10 +104,14 @@ Hardware changed needed to become a proper DIB module/BB3 module:
 * Done: Replace TL431 reference with an REF5025
 * Done, untested: Move the ADC and DACs to the Analog board. The connection to digital will be SPI & I2C only
 * Done, untested: Replace the -2.5 volt power for a proper LDO. Currently a TL431 with a resistor is used.
-* Test the ADC clamp circuits, they are on the PCB but I didn't test it yet.
+* Test the ADC clamp circuits, they are on the obsolte digital PCB but I didn't test it yet.
 * Done, untested: Implement voltage range switching. 
 * Implement a low current range (if needed/feasible)
 * Done: Redesign the reference voltages. Not all are needed and were put in place for testing. 
+* Several TVS protection diodes are not there yet.
+* Scale the Von set voltage for better accuracy. Probably max Von = 2/3 * Vmax.  (50V and 6V). Resistors pads are in place on latest PCB.
+* Implement watchdog in MCU
+
 
 # PCBs
 
@@ -104,7 +152,7 @@ Obsolete test board for the MCU + ADC + DAC + GPIO + Touchscreen connection. DAC
 # Ownership and License
 
 This work is licensed under multiple licences:
- * All hardware designs are licensed under CERN-OHL-
+ * All hardware designs are licensed under CERN-OHL-W-2.0
  * All original software source code is licensed under GPL-3.0-or-later.
  * All documentation is licensed under CC-BY-SA-4.0.
  * There are also parts imported from other sources. See the indivdual files for there specific licenses.
