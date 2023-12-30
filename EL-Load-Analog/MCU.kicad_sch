@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Electronic Load Analog Test Board")
+    (date "2023-12-30")
+    (rev "${VERSION}")
+    (comment 1 "License: CERN-OHL-W-2.0")
+  )
+
   (lib_symbols
     (symbol "Connector_Generic:Conn_02x08_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 1.27 10.16 0)

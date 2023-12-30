@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "Footprints")(type "KiCad")(uri "${KIPRJMOD}/Footprints.pretty")(options "")(descr ""))
   (lib (name "EEZ-DIB")(type "KiCad")(uri "${KIPRJMOD}/libraries/EEZ-DIB.pretty")(options "")(descr ""))
+  (lib (name "SWEB-8094-AU")(type "KiCad")(uri "${KIPRJMOD}/libraries/EEZ-DIB.pretty")(options "")(descr ""))
+  (lib (name "EL-Load-Analog")(type "KiCad")(uri "${KIPRJMOD}/libraries/EL-Load-Analog.pretty")(options "")(descr ""))
 )

@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Electronic Load Analog Test Board")
+    (date "2023-12-30")
+    (rev "${VERSION}")
+    (comment 1 "License: CERN-OHL-W-2.0")
+  )
+
   (lib_symbols
     (symbol "Amplifier_Operational:MCP6004" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 5.08 0)

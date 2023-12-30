@@ -6,7 +6,7 @@
 
   (title_block
     (title "Electronic Load Analog Test Board")
-    (date "2023-07-07")
+    (date "2023-12-30")
     (rev "${VERSION}")
     (comment 1 "License: CERN-OHL-W-2.0")
   )
