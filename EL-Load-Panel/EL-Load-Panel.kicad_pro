@@ -515,7 +515,7 @@
     ]
   ],
   "text_variables": {
-    "PCBVERSION": "1",
+    "PCBVERSION": "2",
     "VERSION": "1"
   }
 }

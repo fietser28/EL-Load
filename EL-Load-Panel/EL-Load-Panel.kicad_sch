@@ -4179,7 +4179,7 @@
     (property "Value" "Bourns PEC11R" (at 173.355 58.4199 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm" (at 171.069 53.34 0)
+    (property "Footprint" "Rotary_Encoder:RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx" (at 171.069 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 173.609 57.15 0)
