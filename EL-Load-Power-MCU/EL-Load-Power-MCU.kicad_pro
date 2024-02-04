@@ -485,7 +485,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/DefaultJN.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -510,7 +510,8 @@
     ]
   ],
   "text_variables": {
-    "PCBVERSION": "2",
-    "VERSION": "2"
+    "LICENSE": "CERN-OHL-W-2.0",
+    "PCBVERSION": "3",
+    "VERSION": "3"
   }
 }

@@ -5,8 +5,8 @@
   (paper "A4")
 
   (title_block
-    (title "EL-Load-PowerTest2")
-    (date "2023-11-28")
+    (title "EL-Load-Power-MCU")
+    (date "2024-02-04")
     (rev "${VERSION}r${PCBVERSION}")
   )
 
