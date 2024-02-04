@@ -8,6 +8,7 @@
     (title "EL-Load-Panel")
     (date "2024-01-01")
     (rev "${VERSION}")
+    (comment 2 "License: CERN-OHL-W-2.0")
   )
 
   (lib_symbols

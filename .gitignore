@@ -3,6 +3,7 @@
 \#*
 .\#*
 *.temp
+*.tmp
 
 # KiCad temporary & backup files
 *.000
