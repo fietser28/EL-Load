@@ -7,10 +7,9 @@
   (paper "A4")
   (title_block
     (title "Electronic Load Analog Test Board v${VERSION}-${PCBVERSION}")
-    (date "2024-02-04")
+    (date "2024-02-06")
     (rev "${VERSION}-${PCBVERSION}")
     (comment 1 "License: CERN-OHL-W-2.0")
-    (comment 4 "AISLER Project ID: XSIKTFLD")
   )
 
   (layers
@@ -1988,7 +1987,7 @@
     (property "Sheetname" "Monitoring, Crossover, Von")
     (property "ki_description" "quad 2-input NOR gate")
     (property "ki_keywords" "HCTMOS Nor2")
-    (path "/740ccc24-2924-4cc8-b4d3-b9aba55a5311/b8cadaa2-abf6-4a56-8af8-0acbc0b27c32")
+    (path "/740ccc24-2924-4cc8-b4d3-b9aba55a5311/b80fbf62-4881-487c-8e45-b27d60b3bd0c")
     (attr smd)
     (fp_text reference "U305" (at 0 -5.28) (layer "F.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)))
@@ -10684,7 +10683,7 @@
     (property "Sheetname" "Monitoring, Crossover, Von")
     (property "ki_description" "Dual, 1 MHz, 85µA, Rail-to-Rail input and output SOIC-8")
     (property "ki_keywords" "opamp vfa r2r rtr")
-    (path "/740ccc24-2924-4cc8-b4d3-b9aba55a5311/994d62c8-bc3e-4700-ac98-ea1175e750de")
+    (path "/740ccc24-2924-4cc8-b4d3-b9aba55a5311/3dec723f-e672-43c6-872d-c75476f79a6a")
     (attr smd)
     (fp_text reference "U301" (at 0.09375 -3.30625 180) (layer "F.SilkS")
         (effects (font (size 0.8 0.8) (thickness 0.15)))

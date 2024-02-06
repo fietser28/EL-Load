@@ -1,0 +1,95 @@
+Description,Footprint,Part,Reference,Value,Quantity,Datasheet,Part Name,MPN,Sim.Device,Sim.Pins
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C315,100p,1,~,C_100.0pF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C213 C214 C227 C228,470p,4,~,C_470.0pF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C1 C310,1n,2,~,C_1.0nF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C5 C6 C18 C40 C41 C43 C48 C54 C405,10n,9,~,C_10.0nF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C2,33n,1,~,C_33.0nF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C4 C21 C22 C23 C24 C25 C26 C36 C37 C38 C39 C201 C202 C203 C204 C205 C206 C207 C208 C215 C216 C217 C218 C219 C220 C221 C222 C301 C302 C303 C304 C305 C306 C307 C308 C309 C311 C312 C313 C314 C402 C404 C406 C407 C501 C502 C504 C505,100n,48,~,C_100.0nF_0805_20%,,,
+Unpolarized capacitor,C_Rect_L18.0mm_W5.0mm_P15.00mm_FKS3_FKP3,C,C3,100nF,1,~,C_100.0nF_15mm_THT_X2_10%,R46KI3100CKM1K,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C45,220n,1,~,C_220.0nF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C401,670n,1,~,,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C10 C12 C19 C20 C29 C32 C42 C44 C47 C503,1u,10,~,C_1.0uF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C34 C35 C316,2u2,3,~,C_2.2uF_10V_X7R_10%_0805,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C27 C28 C49 C50 C52,10u,5,~,C_10.0uF_25V_X7R_10%_0805,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C11 C51 C53,22u,3,~,C_22u_16V_X5R_10%_0805,,,
+"1500W unidirectional TRANSZORB® Transient Voltage Suppressor, DO-201AE",D_SMC,1.5KExxA,D203,1.5KE100A smd variant,1,https://www.vishay.com/docs/88301/15ke.pdf,D_1.5KE100A_SMC,,,
+"100V 0.15A standard switching diode, DO-35",D_MiniMELF,1N4148,D2 D3 D301 D302,1N4148,4,https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf,D_1N4148_miniMELF,,D,1=K 2=A
+Zener diode,D_MiniMELF,D_Zener,D201 D202 D204 D205 D206 D207 D208 D209,TZMB16-GS08,8,~,D_Z_16V_miniMELF,,,
+Fuse,Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open,Fuse,F1,Fuse,1,~,,,,
+Heatsink,LAM3K,Heatsink,HS102,Heatsink,1,~,,,,
+"Generic connector, single row, 01x02, script generated","PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal",Conn_01x02_Socket,J7,Conn_01x02_Socket,1,~,H_Plug_2P_3.81MM_PCB_HOR,,,
+"Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",PinHeader_2x08_P2.54mm_Vertical,Conn_02x08_Odd_Even,J4,Conn_02x08_Odd_Even,1,~,H_Male_1x40_vertical_THT,,,
+"Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",PinSocket_2x08_P2.54mm_Vertical_SMD,Conn_02x08_Odd_Even,J8,Conn_02x08_Odd_Even,1,~,H_Female_2x8_SMD,,,
+"Generic connectable mounting pin connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",SWEB-8094-AU,Conn_01x01_MountingPin,J5,SWEB8094AU-RT,1,~,H_Banana_Socket_24A_Red,,,
+"Generic connectable mounting pin connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)",SWEB-8094-AU,Conn_01x01_MountingPin,J2,SWEB8094AU-SW,1,~,H_Banana_Socket_24A_Black,,,
+"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,Conn_01x02,J1,Temp Sensor PCB,1,~,H_JST_XH_PCB_2P_VERT,,,
+"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,Conn_01x02,J9,Temp Sensor heatsink,1,~,H_JST_XH_PCB_2P_VERT,,,
+"General purpose signal relay, Kemet EE2 Series, DPDT (2 Form C), double coil latching, SMD, 60W/125VA, 220VDC/250VAC, 2A, 5V DC coil",Relay_DPDT_Kemet_EE2_NU_DoubleCoil,EE2-5TNU,K2,EE2-5TNU,1,https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf,ER_EE2-5TNU-L,,,
+"0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23",SOT-23,2N7002,Q1 Q2 Q201 Q202 Q205 Q206 Q301,2N7002,7,https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF,Q_2N7002,,,
+"N-MOSFET transistor, gate/drain/source",TO-247-3_Vertical,Q_NMOS_GDS,Q203 Q204 Q207 Q208,IRFP250M,4,~,Q_IRFP250MPBF,,,
+"0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23",SOT-23,MMBT3904,Q4,MMBT3904,1,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf,Q_MMBT3904,,,
+"-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92",SOT-23,MMBT5401,Q5,MMBT5401,1,,Q_MMBT5401,,,
+"0.6A Ic, 160V Vce, General Purpose NPN Transistor, SOT-23",SOT-23,MMBT5551,Q3 Q6,MMBT5551,2,,Q_MMBT5551,,,
+"-6A Ic, -100V Vce, Power PNP Transistor, TO-220",TO-220-3_Vertical,TIP42C,Q101,TIP42C,1,https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF,,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R23 R45,0,2,~,R_0.0Ω_0805_1%,,,
+Resistor,R_2512_6332Metric_Pad1.40x3.35mm_HandSolder,R,R219 R220 R239 R240,10m,4,~,R_R01_2512_1%_20ppmC,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R36 R37 R38,47,3,~,R_47.0Ω_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R39,91,1,~,R_91.0Ω_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R207 R208 R227 R228,100,4,~,R_100.0Ω_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R41 R504,220,2,~,R_220.0Ω_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R32 R33 R34 R35 R322 R401 R402,1k,7,~,R_1.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R40,1k8,1,~,R_1.8kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R301 R302 R303 R304 R325 R404 R405,2k,7,~,R_2.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R330,2k2,1,~,R_2.2kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R320,7k5,1,~,R_7.5kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R8 R17 R21 R42 R44 R201 R202 R221 R222 R403 R502 R507 R509,10k,13,~,R_10.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R323 R503,15k,2,~,R_15.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R9 R10 R22,22k,3,~,R_22.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R324,24k,1,~,R_24.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R43,47k,1,~,R_47.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R16 R18 R19 R20 R203 R205 R223 R225 R321,100k,9,~,R_100.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R209 R210 R229 R230,1M,4,~,R_1.0MΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R4 R5 R26 R27 R30 R31 R211 R212 R213 R214 R231 R232 R233 R234 R307 R308 R309 R310 R311 R312,100k 0.1%,20,~,R_100k_0805_0.1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R28 R29 R305 R306,10k 0.1%,4,~,R_10k_0805_0.1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R317 R318,1k 0.1%,2,~,R_1k_0805_0.1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R215 R216 R217 R218 R235 R236 R237 R238,1k1 0.1%,8,~,R_1k1_0805_0.1%,,,
+Resistor,R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical,R,R2,1k5 (3W),1,~,R_1.5kΩ_THT_15mm_5mm_3W_1%,FMP300FRF73-1K5,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R204 R206 R224 R226,20k 0.1%,4,~,R_20k_0805_0.1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R313 R314,39k 0.1%,2,~,R_39k_0805_0.1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R3 R6 R315,5k 0.1%,3,~,R_5k_0805_0.1%,,,
+quad 2-input NOR gate,SO-14_3.9x8.65mm_P1.27mm,74HCT02,U305 U403,74HCT02,2,http://www.ti.com/lit/gpn/sn74hct02,U_74HCT02D,,,
+"Single 2.7V to 6.0V Single Supply CMOS Op Amps, with Chip Select, SOIC-8",SOIC-8_3.9x4.9mm_P1.27mm,MCP603-xSN,U401,AD8038,1,http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf,U_AD8038ARZ,,,
+24-bit dual-channel ADC with 1.2V internal reference,TSSOP-20_4.4x6.5mm_P0.65mm,ADS131M02,U20,ADS131M02,1,,U_ADS131M02,,,
+"1A Low Dropout regulator, positive, adjustable output, SOT-223",SOT-223-3_TabPin2,AMS1117,U22,AMS1117,1,http://www.advanced-monolithic.com/pdf/ds1117.pdf,U_AZ1117CH-ADJTRG1,,,
+16-bit quad-channel voltage output DAC with external reference,TSSOP-16_4.4x5mm_P0.65mm,DAC8555,U11 U12,DAC8555,2,https://www.ti.com/lit/ds/symlink/dac8555.pdf,U_DAC8555IPW,,,
+"Operational Amplifier, TO-99-8",SOIC-8_3.9x4.9mm_P1.27mm,LM318H,U201 U202 U205 U206,LM318D,4,http://www.ti.com/lit/ds/symlink/lm318-n.pdf,U_LM318D,,,
+"Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8",SOIC-8_3.9x4.9mm_P1.27mm,LM393,U306 U402,LM393,2,http://www.ti.com/lit/ds/symlink/lm393.pdf,U_LM393,,,
+"Dual, 1 MHz, 85µA, Rail-to-Rail input and output SOIC-8",SOIC-8_3.9x4.9mm_P1.27mm,MCP6L02x-xSN_2,U301,LM833,1,http://ww1.microchip.com/downloads/en/devicedoc/22140b.pdf,U_LM833DR,,,
+"Dual, 1 MHz, 85µA, Rail-to-Rail input and output SOIC-8",SOIC-8_3.9x4.9mm_P1.27mm,MCP6L02x-xSN_1,U302,LM833,1,http://ww1.microchip.com/downloads/en/devicedoc/22140b.pdf,U_LM833DR,,,
+"MICROPOWER 200mA Low Noise LDO negative regulator, fixed output -5V, TSOT-23-5",TSOT-23-5,LT1964-5,U21,LT1964-5,1,https://www.analog.com/media/en/technical-documentation/data-sheets/1964fb.pdf,U_LT1964ES5,,,
+"Single, 1 MHz, 85µA, Rail-to-Rail input and output, SOT-23-5",SOT-23-5,MCP6L01x-xOT,U18 U19,MCP6V51,2,http://ww1.microchip.com/downloads/en/devicedoc/22140b.pdf,U_MCP6V51T-E/OT,,,
+"Low offset opamp, SOT-23-5",SOT-23-5,MCP6V51/LTC2050HV,U203 U204 U207 U208,MCP6V51/LTC2050HV,4,,U_LTC2050HVCS5,,,
+"Low offset opamp, SOT-23-5",SOT-23-5,MCP6V51/LTC2050HV,U303 U304,OPA189/MCP6V51/LTC2050HV,2,,U_LTC2050HVCS5,,,
+"2.5V 0.1% 10mA Low Noise Precision Voltage Reference, SO-8",SOIC-8_3.9x4.9mm_P1.27mm,REF5025AD,U4,REF5025AD,1,http://www.ti.com/lit/ds/symlink/ref5030.pdf,U_REF5025,,,
+"Single SPDT Analog Switch, 5V/3.3V Single-Supply Operation, 12Ohm Ron, SOT-23-6",SOT-23-6,TS5A63157DBV,U1,SN74LVC1G3157DBV,1,https://www.ti.com/lit/ds/symlink/ts5a63157.pdf,U_SN74LVC1G3157DBVR,,,
+"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",SOIC-8_3.9x4.9mm_P1.27mm,TL072,U10,TL072/OPA2376,1,http://www.ti.com/lit/ds/symlink/tl071.pdf,U_TL072CDT,,,
+"800mA Low-Dropout Linear Regulator, 5.0V fixed output, TO-220/TO-252/TO-263/SOT-223",SOT-223-3_TabPin2,TLV1117-50,U23,TLV1117-50,1,http://www.ti.com/lit/ds/symlink/tlv1117.pdf,U_AZ1117CH-5.0TRG1,,,
+"Ultra Low Noise, High PSRR LDO",SOT-23-5,TPS72325,U17,TPS72325,1,,U_TPS72325DB,,,
+"Ultra Low Noise, High PSRR LDO",SOT-23-5,TPS7A2030,U15,TPS7A2030,1,,U_TPS7A2030PDBVR,,,
+"Form A, Solid State Relay (Photo MOSFET) 60V, 0.2A, 10Ohm, SO-4",SO-4_4.4x4.3mm_P2.54mm,ASSR-1218,U8 U9,VO1400AEFTR,2,https://docs.broadcom.com/docs/AV02-0173EN,U_VO1400AEFTR,,,
+
+
+
+
+
+Component Groups:,78
+Component Count:,270
+Fitted Components:,270
+Number of PCBs:,1
+Total components:,270
+Schematic Version:,3
+Schematic Date:,2024-02-06
+PCB Variant:,default
+BoM Date:,2024-02-06
+Schematic Source:,EL-Load-Analog.kicad_sch
+KiCad Version:,Eeschema 7.0.9
