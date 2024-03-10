@@ -10,7 +10,7 @@ The designs here are not finished or fully tested yet.
 # Overview
 
 The DCL8010 electronic load module features a DC Electronic Load with several modes and protections.
-This project is the for the development boards for this project. There is a seperate git project for the firmware.
+This project is the for the development boards for this project. There is a seperate git project for the ![firmware](https://github.com/fietser28/EL-Load-FW).
 
 ## Specifications
 
@@ -48,16 +48,16 @@ This results in the follwing goals:
 | Input/output | Range      | Accuracy  | Resolution | Remarks 
 | ---          |  ---       | ---       | ---        | ---
 | Current monitor | 0-10A   | 10mA      | 1mA        | 
-| Current monitor | 0-1A    | 1mA       | 0.1mA      | not implemented yet
-| Voltage monitor | 0-80V   | 80mV      | 1mV        |
-| Voltage monitor | 0-9V    | 5mV       | 1mV        |
+| Current monitor | 0-1A    | 1mA       | 0.1mA      | not evaluted/tested yet
+| Voltage monitor | 0-80V   | 80mV      | 1mV        | Accuracy probably: 10mV
+| Voltage monitor | 0-9V    | 5mV       | 1mV        | not evaluted/tested yet
 | Power measurements | 0-24h | 1s & 0.2% FS | 1s     | Perform accurate incremental calculations and timing
 | Current set     | 0-10A   | 10mA      | 1mA        |
-| Current set     | 0-1A    | 1mA       | 1mA        | not implemented yet
+| Current set     | 0-1A    | 1mA       | 1mA        | not evaluted/tested yet
 | Voltage set     | 0.5-80V | 80mV      | 1mV        |
 | Voltage set     | 0.5-9V  | 5mV       | 1mV        |
 | Resistance set  | ?       | ?         | ?          | 0.5% FS In software
-| Power set       | ?       | ?         | ?          | 0.5% FS in software
+| Power set       | ?       | 0.25W     | ?          | 0.5% FS in software
 | Von set (80V range) | 0.25-50V | 0.2V  | 0.1V       | Difficult to calibrate
 | Von set (9V range) | 0.25-6V | 0.1V  | 0.1V       | Difficult to calibrate
 | OCP (10A range) | 0.1-10A | 100mA  | 10mA       | Difficult to calibrate
@@ -80,38 +80,7 @@ An electronic load is often used to discharge batteries and due to the time this
 
 ## Limitations / Issues
 
-* Fixed (not tested): The ADC and DAC are on a seperate PCB's. This causes some offset errors. Especially in the Imon/Umon. This might also be caused by the next issue
-* Fixed (not tested): The current implementations use TL431 for voltage reference. This is not good enough. 
-* Von causes some oscillation when the voltage slowly decreases to the set level. This is noticable in a typical battery discharge test. As this ia a very valid and common
-* Changed (not tested): The power supply board is a very simplistic set of 78** / 79**. Ok for testing, but needs to be replaced with something decend
-* Reverse polarity is a very crude diode+fuse: Implement a proper reverse polarity circuit preferabbly with a detection to software (nice to have)
-* Fixed (not tested the heating...): Add a fuseholder
-* Test with real LM3/150 heatsink using screwmounting and isolation. If someone can get me one.....
-* Optimal placment of MOSFETS on real heatsink is not determined. 
-
-Hardware changed needed to become a proper DIB module/BB3 module:
-
-* This is a DIB module size but it needs:
-  * DIB connectors in place
-  * move the ADC and DAC to analog board
-  * Implement a connector for a piggy board containing an MCU (probably a RP2040). This board has 2x SPI , 1x I2C. I think this is needed because of size, but not sure.
-  * add banana connectors 
-* design front panel
-* consider reversing the BB3 airflow 
-
-# TODO
-
-* Done: Replace TL431 reference with an REF5025
-* Done, untested: Move the ADC and DACs to the Analog board. The connection to digital will be SPI & I2C only
-* Done, untested: Replace the -2.5 volt power for a proper LDO. Currently a TL431 with a resistor is used.
-* Test the ADC clamp circuits, they are on the obsolte digital PCB but I didn't test it yet.
-* Done, untested: Implement voltage range switching. 
-* Implement a low current range (if needed/feasible)
-* Done: Redesign the reference voltages. Not all are needed and were put in place for testing. 
-* Several TVS protection diodes are not there yet.
-* Scale the Von set voltage for better accuracy. Probably max Von = 2/3 * Vmax.  (50V and 6V). Resistors pads are in place on latest PCB.
-* Implement watchdog in MCU
-
+Most limitations,TODO's and issues are now tracked on ![github issues](https://github.com/fietser28/EL-Load/issues)
 
 # PCBs
 
@@ -137,17 +106,17 @@ Front panel PCB for standalone deployment. Connects to EL-Load-Power-MCU. Has a 
 ### EL-Load-Simple-Power
 Obsolete test board. Very simple 78*/79* based power supply to generate 2x+12V, 1x+5V, 1x-5V and optionally -12V. Was used for previous version of EL-Load-Analog.
 
-![EL-Load-Simple-Power](EL-Load-Simple-Power/EL-Load-Simple-Power.png)
+![EL-Load-Simple-Power](Obsolete/EL-Load-Simple-Power/EL-Load-Simple-Power.png)
 
 ### EL-Load-Fan-Controller
 Obsolete test board for the fan controller. For testing MAX31760 with 12V LDO regulation. Not used anymore. MAX31760 is now on Power-MCU-board.
 
-![EL-Load-Fan-Controller](EL-Load-Fan-Controller/EL-Load-Fan-Controller.png)
+![EL-Load-Fan-Controller](Obsolete/EL-Load-Fan-Controller/EL-Load-Fan-Controller.png)
 
 ### EL-Load-Digital
 Obsolete test board for the MCU + ADC + DAC + GPIO + Touchscreen connection. DAC + ADC's are now on analog board. MCU and GPIO are now on new Power-MCU-board.
 
-![EL-Load-Digital](EL-Load-Digital/EL-Load-Digital.png)
+![EL-Load-Digital](Obsolete/EL-Load-Digital/EL-Load-Digital.png)
 
 # Ownership and License
 
