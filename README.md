@@ -50,7 +50,7 @@ This results in the follwing goals:
 | Current monitor | 0-10A   | 10mA      | 1mA        | 
 | Current monitor | 0-1A    | 1mA       | 0.1mA      | not evaluted/tested yet
 | Voltage monitor | 0-80V   | 80mV      | 1mV        | Accuracy probably: 10mV
-| Voltage monitor | 0-9V    | 5mV       | 1mV        | not evaluted/tested yet
+| Voltage monitor | 0-10V   | 1mV       | 0.1mV      | 
 | Power measurements | 0-24h | 1s & 0.2% FS | 1s     | Perform accurate incremental calculations and timing
 | Current set     | 0-10A   | 10mA      | 1mA        |
 | Current set     | 0-1A    | 1mA       | 1mA        | not evaluted/tested yet
