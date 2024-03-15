@@ -52,8 +52,8 @@ This results in the follwing goals:
 | Voltage monitor | 0-80V   | 80mV      | 1mV        | Accuracy probably: 10mV
 | Voltage monitor | 0-10V   | 1mV       | 0.1mV      | 
 | Power measurements | 0-24h | 1s & 0.2% FS | 1s     | Perform accurate incremental calculations and timing
-| Current set     | 0-10A   | 10mA      | 1mA        |
-| Current set     | 0-1A    | 1mA       | 1mA        | not evaluted/tested yet
+| Current set     | 5mA-10A   | 10mA      | 1mA        |
+| Current set     | 5mA-1A  | 1mA       | 0.2mA      | 
 | Voltage set     | 0.5-80V | 80mV      | 1mV        |
 | Voltage set     | 0.5-9V  | 5mV       | 1mV        |
 | Resistance set  | ?       | ?         | ?          | 0.5% FS In software
