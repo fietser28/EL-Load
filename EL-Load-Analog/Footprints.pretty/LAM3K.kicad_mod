@@ -34,6 +34,10 @@
     (stroke (width 0.05) (type default)) (layer "F.CrtYd") (tstamp 64299d5d-cdae-4d89-84d0-0b9eae342719))
   (fp_line (start 85.1 15.05) (end 85.05 -15.1)
     (stroke (width 0.05) (type default)) (layer "F.CrtYd") (tstamp 81a3f36a-467a-4d4a-a010-f08199e12456))
+  (pad "" np_thru_hole circle (at -65 0) (size 6 6) (drill 3.2) (layers "F&B.Cu" "*.Mask")
+    (clearance 1.5) (zone_connect 0) (tstamp 2439e909-626f-4ac4-a270-6e353ccee39b))
+  (pad "" np_thru_hole circle (at 65 0) (size 6 6) (drill 3.2) (layers "F&B.Cu" "*.Mask")
+    (clearance 1.5) (zone_connect 0) (tstamp e599dc85-4ebf-4a08-b673-244923533d87))
   (model "${KIPRJMOD}/3Dmodels/lam_3_k.stp"
     (offset (xyz -75 0 21))
     (scale (xyz 1 1 15))
