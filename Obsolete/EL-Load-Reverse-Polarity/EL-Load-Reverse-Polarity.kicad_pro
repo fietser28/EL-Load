@@ -43,8 +43,8 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.8,
+        "silk_text_size_v": 0.8,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
@@ -95,7 +95,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -185,6 +185,8 @@
         0.4,
         0.508,
         1.0,
+        3.5,
+        4.0,
         6.0
       ],
       "tuning_pattern_settings": {
@@ -549,7 +551,8 @@
       "Net-(J1-Pin_1)": "LargeCurrent",
       "Net-(J1-Pin_2)": "LC-HV",
       "Net-(NT1-Pad1)": "HV",
-      "Net-(Q2-D)": "LC-HV"
+      "Net-(Q2-D)": "LC-HV",
+      "Net-(Q2-S)": "LC-HV"
     },
     "netclass_patterns": [
       {
@@ -578,6 +581,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "EL-Load-Reverse-Polarity.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -611,7 +615,7 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -669,6 +673,18 @@
           "label": "Sim.Enable",
           "name": "Sim.Enable",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -723,7 +739,7 @@
     ]
   ],
   "text_variables": {
-    "PCBVERSION": "A",
-    "VERSION": "1"
+    "PCBVERSION": "B",
+    "VERSION": "2"
   }
 }
