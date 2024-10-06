@@ -1,0 +1,63 @@
+Description,Footprint,Part,Reference,Value,Quantity,Datasheet,Part_Name,MPN,Consumable,Sim.Enable
+"Buzzer, polarized",Buzzer_12x9.5RM7.6,Buzzer,BZ1,Buzzer,1,~,EM_Buzzer_single_5V_THT,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C27,200p,1,~,C_200.0pF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C5 C8 C9 C10 C11 C16 C17 C21 C31,100n,9,~,C_100.0nF_50V_0805_10%_X7R,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C2 C14 C29,1u,3,~,C_1.0uF_0805_20%,,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C12,2.2u,1,~,C_2.2uF_25V_X7R_10%_0805,,,
+"Polarized capacitor, small symbol",CP_Elec_5x5.8,C_Polarized_Small,C1 C4 C6 C7 C13 C15 C18 C19 C20 C22 C23 C30 C32,10u,13,~,C_10uF_50V_Elec_5,EEE-FK1V470P,,
+"Unpolarized capacitor, small symbol",C_0805_2012Metric,C_Small,C24 C26,10u,2,~,C_10.0uF_6V3_X7R_10%_0805,,,
+Polarized capacitor,CP_Elec_8x10.5,C_Polarized,C25 C28,100u,2,~,C_100uF_50V_Elec_8,,,
+"Zener diode, small symbol, filled shape",D_MiniMELF,D_Zener_Small_Filled,D14 D15,16V,2,~,D_Z_16V_miniMELF,,,
+"Zener diode, small symbol, filled shape",D_MiniMELF,D_Zener_Small_Filled,D16,20V,1,~,D_Z_20V_miniMELF,,,
+"5.6V, 500mW, 2%, Zener diode, MiniMELF",D_MiniMELF,BZV55B5V6,D18,BZV55B5V6,1,https://assets.nexperia.com/documents/data-sheet/BZV55_SER.pdf,D_Z_5V6_miniMELF,,,
+Light emitting diode,LED_0805_2012Metric,LED,D6 D12 D13 D19,LED,4,~,D_LED_Groen_0805,,,
+"30V 0.5A Schottky Power Rectifier Diode, SOD-123",D_SOD-123,MBR0530,D1 D2 D3 D7 D8 D9,MBR0530,6,http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf,D_MBR0530T,MBR0530T1G,,
+"Schottky diode, small symbol",D_SMA,D_Schottky_Small,D5 D10 D17,SS14,3,~,D_SS14,,,
+"Resettable fuse, polymeric positive temperature coefficient",Fuse_1206_3216Metric,Polyfuse,F1,1A,1,~,F_SMD_PTC_1A_1206,,,
+"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)","PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical",Conn_01x02,J1 J2,Conn_01x02,2,~,H_Plug_2P_3.81MM_PCB_VERT,,,
+"Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",IDC-Header_2x08_P2.54mm_Vertical,Conn_02x08_Odd_Even,J11,IDC-Header 2x08 P2.54mm,1,~,H_IDC_2.54mm_Socket_THT_2x8pins,,,
+"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",PinHeader_1x02_P2.54mm_Vertical,Conn_01x02,J5 J7 J8 J9 J12 JP3 JP4 JP5 JP6 JP8 JP9 JP10 JP11 JP12,PN sensor,14,~,H_Male_1x40_vertical_THT,,1,
+"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,Conn_01x02,J10,Power for serial interface,1,~,H_JST_XH_PCB_2P_VERT,,,
+"Inductor with ferrite core, small symbol",L_1210_3225Metric,L_Ferrite_Small,L2 L3 L8,10u ,3,https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_nlcv32-ef_en.pdf,L_10uH_480mohm_450mA_,NLCV32T-100K-EF,,
+Inductor,L_Bourns_SRN6045TA,L,L4,100u / 300mA,1,~,L_100uH_CD54,,,
+Coupled inductor with ferrite core,L_Bourns_SRF1260,L_Ferrite_Coupled_1423,L1,SRF0905-202Y,1,~,LC_2000uH_0.6A_0905,SRF0905-202Y,,
+"Fan, tacho output, PWM input, 4-pin connector",FanPinHeader_1x04_P2.54mm_Vertical,Fan_4pin,M1 M2,Fan_4pin,2,http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf,H_Molex_47053-1000_THT_PC_Fan,,,
+"Open Hardware logo, small",OSHW-Logo_5.7x6mm_SilkScreen,Logo_Open_Hardware_Small,PCB1,Logo_Open_Hardware_Small,1,~,PCB_EL-Load-Power-MCU,,,0
+"50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23",SOT-323_SC-70,BSS138,Q1 Q2 Q3,BSS138W,3,https://www.diodes.com/assets/Datasheets/BSS138W.pdf,Q_BSS138W,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R22,0.3,1,~,R_0.33Ω_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R3 R6,10,2,~,R_10.0Ω_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R5 R7 R8 R29 R30,1k,5,~,R_1.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R12 R13 R15 R16 R19 R20 R26 R27,3k,8,~,R_3.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R10 R11 R24,3k3,3,~,R_3.3kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R1 R2,4k7,2,~,R_4.7kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R4 R14 R18 R21 R23 R28,10k,6,~,R_10.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R17 R25 R31,20k,3,~,R_20.0kΩ_0805_1%,,,
+"Resistor, small symbol",R_0805_2012Metric,R_Small,R9,39k,1,~,R_39.0kΩ_0805_1%,,,
+"Push button switch, generic, two pins",SW_Push_1P1T_NO_6x6mm_H9.5mm,SW_Push,SW1,Pico Reset,1,~,SW_SPST_NO_SMD_6x6x5mm,,,
+"Transformer, dual primary, dual secondary",L_Wuerth_750316031,Transformer_2P_2S,T2,Wuerth_750316031,1,~,T_1:1:1.75:1.75_185uH_SMD,,,
+"I2C Serial EEPROM, 64Kb, DIP-8/SOIC-8/TSSOP-8/DFN-8",SOIC-8_3.9x4.9mm_P1.27mm,24LC64,U11,24C64,1,http://ww1.microchip.com/downloads/en/DeviceDoc/21189f.pdf,U_24C64,,,
+"1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",SOT-223-3_TabPin2,AMS1117-3.3,U5 U9,AMS1117-3.3,2,http://www.advanced-monolithic.com/pdf/ds1117.pdf,U_AMS1117-3.3,,,
+"1A 20V Fixed LDO Linear Regulator, 5.0V, SOT-89/SOT-223/TO-220/TO-252/TO-263",SOT-223-3_TabPin2,AZ1117-5.0,U7,AZ1117-5.0,1,https://www.diodes.com/assets/Datasheets/AZ1117.pdf,U_AZ1117CH-5.0TRG1,,,
+"1.5A low dropout linear regulator, adjustable output, TO-252",TO-252-5_TabPin6,BD00FC0W,U3,BD00FC0WFP-E2,1,,U_BD00FC0WFP,,,
+"Precision Fan-Speed Controller with Nonvolatile Lookup Table, I2C, SOIC-16",QSOP-16_3.9x4.9mm_P0.635mm,MAX31760,U1,MAX31760,1,,U_MAX31760AEE+T,,,
+"1.5A, step-up/down/inverting switching regulator, 3-40V Vin, 100kHz, SO-8",SOIC-8_3.9x4.9mm_P1.27mm,MC34063AD,U10,MC34063AD,1,http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF,U_MC34063AD,,,
+"16-bit I/O expander, I2C, interrupts, w pull-ups, SOIC-28",SOIC-28W_7.5x17.9mm_P1.27mm,MCP23017_SO,U6,MCP23017_SO,1,http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf,U_MCP23017-E/SO,,,
+Raspberry Pi Pico Embedded Dev Module | Raspberry Pi SC0915,MODULE_SC0915,SC0915,U8,SC0915,1,,EM_Raspberry_Pi_Pico,SC0915,,
+"Low Noise, 1A, Transformer Drivers for Isolated Power Supplies, 420 kHz, SOT-23-6",SOT-23-6,SN6505BDBV,U2,SN6505BDBV,1,http://www.ti.com/lit/ds/symlink/sn6505b.pdf,U_SN6505BDBVT_SOT-23-6,,,
+,SOIC-8_3.9x4.9mm_P1.27mm,Si8602AD,U4,Si8602AB,1,,U_SI8602AB-B-IS,,,
+
+
+
+
+
+Component Groups:,46
+Component Count:,123
+Fitted Components:,123
+Number of PCBs:,1
+Total components:,123
+Schematic Version:,4r4
+Schematic Date:,2024-09-14
+PCB Variant:,default
+BoM Date:,2024-09-14
+Schematic Source:,EL-Load-Power-MCU.kicad_sch
+KiCad Version:,Eeschema 7.0.9
