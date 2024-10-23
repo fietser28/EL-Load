@@ -10,7 +10,13 @@ The designs here are not finished or fully tested yet.
 # Overview
 
 The DCL8010 electronic load module features a DC Electronic Load with several modes and protections.
-This project is the for the development boards for this project. There is a seperate git project for the ![firmware](https://github.com/fietser28/EL-Load-FW).
+This project is the for the development boards for this project. There is a seperate git project for the [firmware](https://github.com/fietser28/EL-Load-FW).
+
+
+![Standalone unit](Images/Standalone.jpg)
+
+Together with [studio] and a BB3 there will be some example dashboards in the near future. For example a ![battery profile](Images/BatteryProfileDashboard.png) application:
+
 
 ## Specifications
 
@@ -80,7 +86,7 @@ An electronic load is often used to discharge batteries and due to the time this
 
 ## Limitations / Issues
 
-Most limitations,TODO's and issues are now tracked on ![github issues](https://github.com/fietser28/EL-Load/issues)
+Most limitations,TODO's and issues are now tracked on [github issues](https://github.com/fietser28/EL-Load/issues).
 
 # PCBs
 
