@@ -1,0 +1,60 @@
+connectors:
+    MCU-J8:
+        type: PinHeader 2x08 P2.54mm
+        pins: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, ]
+        pinlabels: [GND, GND, MCU/VoltSenseClear, +7VU, MCU/HWProtEnable, +7VU, MCU/VoltSenseSet, _reversePolarity, MCU/senseError, +15VU, MCU/voltRangeLow, -7VU, MCU/~VonLatch, -7VU, GND, GND, ]
+
+    MCU-J7:
+        type: PinHeader 2x08 P2.54mm
+        pins: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, ]
+        pinlabels: [MCU/resetProt, MCU/OCPtriggered, MCU/clampOff, MCU/OVPtriggered, MCU/EL-ADC_RDY, MCU/EL-ADC_CS, MCU/EL-SPI_TX, MCU/EL-SPI_SCK, MCU/EL-ADC_CLK, MCU/EL-SPI_RX, GND, MCU/EL-DAC1_CS, +3V3, MCU/currRangeLow, MCU/EL-DAC2_CS, MCU/~Von, ]
+
+    MCU-J11:
+        type: IDC-Header 2x08 P2.54mm
+        pins: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, ]
+        pinlabels: [GND, +3V3, SCLK, MOSI, RESET, DC, BLK, MISO, CS1, CS2, PEN, _KEYS_SDA, _KEYS_SCL, INT, ~RESET, GND, ]
+
+    Panel-J2:
+        type: Conn_02x08_Odd_Even
+        pins: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, ]
+        pinlabels: [GND, +3V3, SCLK, MOSI, RESET, DC, BLK, MISO, CS1, CS2, PEN, SDA, SCL, INT, ~RESET, GND, ]
+
+    Analog-J8:
+        type: Conn_02x08_Odd_Even
+        pins: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, ]
+        pinlabels: [resetProt, OCPtriggered, ClampOff, OVPtriggered, ADC_RDY, ADC_CS, SPI0_TX, SPI0_SCK, ADC_CLK, SPI0_RX, GND, DAC1_CS, +3.3VD, CurrRangeLow, DAC2_CS, ~Von, ]
+
+    Analog-J4:
+        type: Conn_02x08_Odd_Even
+        pins: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, ]
+        pinlabels: [GND, GND, VsenseClear, +6V, HWProtEnable, +6V, VsenseSet, +15V, SenseError, +15V, VoltRangeLow, -6V, ~VonLatch, -6V, GND, GND, ]
+
+cables:
+  W1:
+    gauge: 28 AWG
+    length: 0.045
+    color_code: DIN
+    wirecount: 16
+    shield: false
+
+  W2:
+    gauge: 28 AWG
+    length: 0.05
+    color_code: DIN
+    wirecount: 16
+    shield: false
+
+connections:
+  -
+    - MCU-J8: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+    - W1: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+    - Analog-J4: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+  -
+    - MCU-J7: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+    - [ -,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-, ]
+    - Analog-J8: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+ 
+  - 
+    - MCU-J11: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+    - W2: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
+    - Panel-J2: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,]
