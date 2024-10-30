@@ -510,7 +510,7 @@
   ],
   "text_variables": {
     "LICENSE": "CERN-OHL-W-2.0",
-    "PCBVERSION": "4",
-    "VERSION": "4"
+    "PCBVERSION": "5",
+    "VERSION": "5"
   }
 }
