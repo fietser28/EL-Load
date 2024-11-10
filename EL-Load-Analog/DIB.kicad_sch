@@ -6,7 +6,7 @@
 
   (title_block
     (title "Electronic Load Analog Test Board")
-    (date "2024-02-06")
+    (date "2024-11-10")
     (rev "${VERSION}")
     (comment 1 "License: CERN-OHL-W-2.0")
   )
@@ -1827,7 +1827,7 @@
     (property "Datasheet" "~" (at 173.99 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Part Name" "C_100.0nF_0805_20%" (at 173.99 29.21 0)
+    (property "Part Name" "C_100.0nF_50V_0805_10%_X7R " (at 173.99 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5c88e414-efc8-434d-bced-d2b9b1504f5a))

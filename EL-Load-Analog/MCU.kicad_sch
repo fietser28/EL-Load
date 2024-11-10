@@ -6,7 +6,7 @@
 
   (title_block
     (title "Electronic Load Analog Test Board")
-    (date "2024-02-06")
+    (date "2024-11-10")
     (rev "${VERSION}")
     (comment 1 "License: CERN-OHL-W-2.0")
   )
@@ -666,16 +666,6 @@
   (wire (pts (xy 71.12 123.19) (xy 73.025 123.19))
     (stroke (width 0) (type default))
     (uuid f128cf82-cb42-4b44-a1c9-7b4a34f5653c)
-  )
-
-  (text "Connector 1 to/from DIB:\n- 2x GND   ( 2 pins)\n- SPI + CSA from DIB    (4 pins)\n- Reset pin from DIB    (1 pin)\n- CSB/Boot pin from DIB (1 pin)\n- 12V power from DIB.   (1-2 pins)\n==== 10 PINS\n\nConnector 2 to analog stuff.\n- SPI + 3x CS from DAC+ADC (6 pins)\n- I2C from GPIO/MCP23008 + Fan control. (2 pins)\n- GND\n==== 10 PINS\n"
-    (at 95.885 41.91 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 3e9a7df7-dd8b-4b95-8700-69c168651687)
-  )
-  (text "not implemented" (at 112.395 74.93 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 44fb54f4-a392-4327-9fa2-e29b099bf3f8)
   )
 
   (global_label "~{Von}" (shape input) (at 92.71 125.73 0) (fields_autoplaced)
