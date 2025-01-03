@@ -624,7 +624,7 @@
     ]
   ],
   "text_variables": {
-    "PCBVERSION": "D",
-    "VERSION": "4"
+    "PCBVERSION": "E",
+    "VERSION": "4.1"
   }
 }

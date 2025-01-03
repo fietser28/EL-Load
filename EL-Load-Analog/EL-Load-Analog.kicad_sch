@@ -853,7 +853,7 @@
     (property "Value" "CERN-OHL-W-2.0" (at 194.945 152.4 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Symbol:OSHW-Logo_5.7x6mm_SilkScreen" (at 194.945 142.24 0)
+    (property "Footprint" "Symbol:OSHW-Logo_7.5x8mm_SilkScreen" (at 194.945 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 194.945 142.24 0)

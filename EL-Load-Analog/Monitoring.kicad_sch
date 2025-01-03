@@ -4639,7 +4639,7 @@
   )
 
   (symbol (lib_id "Diode:1N4148") (at 91.44 65.405 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 16258fe4-564c-4e29-87c9-07c84f41773c)
     (property "Reference" "D15" (at 94.615 64.135 90)
       (effects (font (size 1.27 1.27)) (justify right))
