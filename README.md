@@ -4,8 +4,8 @@ SPDX-FileCopyrightText: 2023 Jan Nieuwstad <jan.sources@nieuwstad.net>
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-# This is WORK IN PROGRESS.
-The designs here are not finished or fully tested yet.
+# Open-Source DC Electronic Load
+A DC electronic load is used to simulate various load conditions on a power source by drawing a controlled amount of current or power. It is commonly used in testing power supplies, batteries, and other DC power devices to evaluate their performance, stability, and protection features.
 
 # Overview
 
